@@ -1,0 +1,108 @@
+@font-face {
+    font-family: LEFUN;
+    src: url(../fonts/LeFunFont-Regular.otf);
+}
+body{
+    background-color: black;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    background: url(../img/1.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    height: auto;
+    width: 20%;
+    aspect-ratio: 2/1;
+    flex-shrink: 0;
+}
+.nav{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: calc(0.5em + 1vw);
+    color: #dcdcdc;
+    flex-grow: 1;
+}
+.nav-item{
+    box-sizing: border-box;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+.nav-item:hover{
+    color: #f18989;
+    text-decoration: underline;
+}
+.bg-line{
+    background: url(../img/2.jpg);
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 3/1;
+    margin: 25px 0;
+}
+.head{
+    font-size: calc(1.5rem + 5vw);
+    letter-spacing: 2rem;
+    color: #dcdcdc;
+    text-shadow: 2px 2px 1px #000; 
+    text-align: center;
+    font-family: LEFUN;
+}
+.line{
+    display: flex;
+    margin: 25px auto;
+    width: 80vw;
+}
+.img1{
+object-fit: scale-down;
+flex: 1 1 50%;
+}
+.text1{
+    color: white;
+    font-size: calc(0.5em + 1vw);
+    margin: 0 10px 10px 20px;
+    flex: 1 1 50%;
+}
+.img2{
+object-fit: scale-down;
+flex: 1 1 50%;
+}
+.img2 img, .img1 img{
+    width: 100%;
+    height: auto;
+}
+.text2{
+    color: white;
+    font-size: calc(0.5em + 1vw);
+    margin: 0 10px 10px 20px;
+    flex: 1 1 50%;
+}
+footer{
+    color: #fff0f5;
+    display: flex;
+    width: 100%;
+    background-color: #333333;
+}
+.footer-nav{
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+.footer-nav-item{
+    font-size: calc(0.2em+1vw);
+}
+.icons{
+    display: flex;
+    width: 30vw;
+    justify-content: space-around;
+    align-items: center;
+}
